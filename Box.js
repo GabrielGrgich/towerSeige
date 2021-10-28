@@ -1,13 +1,13 @@
 class Box extends BaseClass{
-  constructor(x, y, width, height){
-	super(x,y,width,height);
+  constructor(x, y){
+	super(x,y,50,50);
 	this.visibility = 255;
   }
   
   display () {
 	console.log(this.body.speed);
 	if (this.body.speed < 3) {
-	  super.display()
+	  //super.display()
 	} else {
 	  World.remove(world,this.body);
 	  push()

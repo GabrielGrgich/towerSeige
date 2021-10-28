@@ -18,18 +18,18 @@ function setup(){
     world = engine.world;
 
 
-    box1 = new Box(1000,300,50,50)
-    box2 = new Box(1050,300,50,50)
-    box3 = new Box(1100,300,50,50)
-    box4 = new Box(950,300,50,50)
-    box5 = new Box(900,300,50,50)
-    box6 = new Box(925,250,50,50)
-    box7 = new Box(975,250,50,50)
-    box8 = new Box(1025,250,50,50)
-    box9 = new Box(1075,250,50,50)
-    box10 = new Box(950,200,50,50)
-    box11 = new Box(1000,200,50,50)
-    box12 = new Box(1050,200,50,50)
+    box1 = new Box(1000,300,50,50);
+    box2 = new Box(1050,300,50,50);
+    box3 = new Box(1100,300,50,50);
+    box4 = new Box(950,300,50,50);
+    box5 = new Box(900,300,50,50);
+    box6 = new Box(925,250,50,50);
+    box7 = new Box(975,250,50,50);
+    box8 = new Box(1025,250,50,50);
+    box9 = new Box(1075,250,50,50);
+    box10 = new Box(950,200,50,50);
+    box11 = new Box(1000,200,50,50);
+    box12 = new Box(1050,200,50,50);
     groundObject = new ground(1000,400,500,20);
 
     polygon = new Polygon(200,0);
@@ -40,7 +40,7 @@ function setup(){
 }
 
 function draw(){
-    background(200)
+    background(200);
     Engine.update(engine);
     strokeWeight(4);
     
