@@ -32,10 +32,10 @@ function setup(){
     box12 = new Box(1050,200,50,50);
     groundObject = new ground(1000,400,500,20);
 
-    polygon = new Polygon(200,0);
+    polygon = new Polygon(200,200);
 
     
-    slingshot = new SlingShot(polygon.body,{x:200, y:300});
+    //slingshot = new SlingShot(polygon.body,{x:200, y:300});
 
 }
 
@@ -46,7 +46,7 @@ function draw(){
     
     polygon.display();
 
-    slingshot.display();
+    //slingshot.display();
 
     box1.display();
     box2.display();
