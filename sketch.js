@@ -7,6 +7,7 @@ const Constraint = Matter.Constraint;
 var engine, world;
 var  polygon, slingShot, groundObject1,groundObject2;
 var box1,box2,box3,box4,box5,box6,box7,box8,box9,box10,box11,box12;
+var score  = 0;
 
 function preload(){
 polygon_img=loadImage("polygon.png");
@@ -68,8 +69,9 @@ function draw(){
     background(200);
     Engine.update(engine);
     strokeWeight(4);
+    text("Score: "+score,760,20);
 
-    text(mouseX + ',' + mouseY, 10, 15);
+    //text(mouseX + ',' + mouseY, 10, 15);
   textSize(20);
   fill("lightyellow");
   text("Drag the polygon to destroy the blocks",300,30);
@@ -110,6 +112,23 @@ function draw(){
   fill("white")
   blocks9.display();
   fill("gold");
+
+  block1.score();
+  block2.score();
+  block3.score();
+  block4.score();
+  block5.score();
+  block6.score();
+  block7.score();
+  block8.score();
+  block9.score();
+  block10.score();
+  block11.score();
+  block12.score();
+  block13.score();
+  block14.score();
+  block15.score();
+  block16.score();
 
     groundObject1.display();
     groundObject2.display();
